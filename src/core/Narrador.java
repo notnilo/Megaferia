@@ -10,15 +10,15 @@ import java.util.ArrayList;
  *
  * @author devergel
  */
-public class Autor extends Persona {
-    private ArrayList<Libro> libros;
+public class Narrador extends Persona {
+    private ArrayList<AudioLibro> libros;
 
-    public Autor(ArrayList<Libro> libros, String nombre, int cedula) {
+    public Narrador(ArrayList<AudioLibro> libros, String nombre, int cedula) {
         super(nombre, cedula);
         this.libros = libros;
     }
     
-    public boolean addLibro(Libro libro){
+    public boolean addLibro(AudioLibro libro){
         if(!this.libros.contains(libro)){
             this.libros.add(libro);
             return true;
